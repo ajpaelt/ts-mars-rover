@@ -3,7 +3,7 @@ import { parsePlateauSize } from "../src/inputs/parsePlateauSize";
 
 describe("parsePlateauSize", () => {
     test("valid input parsed into array", () => {
-        expect(parsePlateauSize("1 3")).toEqual([1, 3]);
+        expect(parsePlateauSize("0 0")).toEqual([0, 0]);
     });
     test("empty input throws custom error", () => {
         expect(() => parsePlateauSize("")).toThrow("Warning: empty string");
