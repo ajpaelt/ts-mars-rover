@@ -13,6 +13,6 @@ export function parseInstructions(rawInstructions: string): Instruction[] {
 
 
 export function isInstruction(value: string): value is Instruction {
-    const valid = (element: string) => element === value ;
+    const valid = (element: string) => element === value;
     return INSTRUCTIONS.some(valid)
 }

@@ -9,7 +9,7 @@ describe("parseInstructions", () => {
         expect(() => parseInstructions("MLaLJM")).toThrow;
     });
     test("emptry string throws custom error", () => {
-        expect(() => parseInstructions("")).toThrow;
+        expect(() => parseInstructions("")).toThrow("Warning: empty string");
     });
 });
 
